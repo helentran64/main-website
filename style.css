@@ -37,6 +37,45 @@ html {
   font-size: 14px;
 }
 
+/* ---- arrow ---- */
+.arrow{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1em;
+  padding-top: 30px;
+
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 3px solid #53ceff6e;
+  border-right: 3px solid #53ceff6e;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+
 /* ---- About me ---- */
 .profilePic {
   display: flex;
@@ -44,9 +83,8 @@ html {
 }
 
 #picture {
-  border-radius: 5%;
-  margin-top: 150px;
-  box-shadow: 0 0 25px #0000003a;
+  border-radius: 50%;
+  margin-top: 170px;
 }
 
 #picture:hover{
@@ -56,11 +94,12 @@ html {
 #aboutGrid {
   display: grid;
   grid-template-columns: 1fr 1fr; 
+  gap: 0px;
 }
 
 .aboutParagraph {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 150px;
   padding-right: 200px;
 }
 
@@ -402,6 +441,15 @@ display:block;
   .welcomepic {
     background-image: url(./Images/night-sky-small.png);
   }
+
+  #picture {
+    margin-left: 200px;
+  }
+
+  .aboutParagraph {
+    padding-right: 300px;
+  }
+
 }
 
 /* ---- smaller screen --- */
@@ -441,7 +489,9 @@ display:block;
   }
 
   #portfolio p {
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     text-align: center;
   } 
 
@@ -449,12 +499,19 @@ display:block;
     display: flex;
     justify-content: center;
     padding: 10px;
+    margin-top: 30px;
   }
 
 }
 
 /* ---- mobile ---- */
 @media screen and (max-device-width: 480px) {
+
+  .arrow :nth-child(3){
+    display: none;
+    
+  }
+
   #greeting h1 {
     font-size: 50px;
   }
