@@ -472,6 +472,9 @@ display:block;
     font-size: 9px; /* change this size when you narrow down */
   }
   
+  #experiences h1 {
+    padding: 20px;
+  }
 }
 
 
