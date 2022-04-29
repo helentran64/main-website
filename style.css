@@ -99,7 +99,7 @@ html {
 
 .aboutParagraph {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 200px;
   padding-right: 200px;
 }
 
@@ -155,7 +155,7 @@ html {
 
 /* ---- Work and Volunteer Experiences ---- */
 #experiences {
-  margin-top: 200px;
+  margin-top: 100px;
   padding-top: 100px;
 }
 
@@ -338,8 +338,8 @@ display:block;
 
 /* ---- Portfolio ---- */
 #portfolio {
-  margin-top: 100px;
-  padding-top: 200px;
+  margin-top: 10px;
+  padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr; 
 }
@@ -396,6 +396,7 @@ display:block;
   display: flex;
   justify-content: center;
   padding-right: 100px;
+  padding-top: 50px;
 }
 
 #codeBackground img{
