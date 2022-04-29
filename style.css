@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ---- nav and welcome picture ---- */
 .welcomepic {
   background-image: url(./Images/night-sky.png);
   background-repeat: no-repeat;
